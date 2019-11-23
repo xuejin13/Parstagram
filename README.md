@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories: http://g.recordit.co/ZVxSydm76r.gif Video is not showing.
 
 <img src='http://g.recordit.co/ZVxSydm76r.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
