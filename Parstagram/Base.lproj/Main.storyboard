@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="height" constant="21" id="UQ9-IK-0lB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBT-cZ-0RQ">
@@ -32,20 +32,25 @@
                                     <constraint firstAttribute="height" constant="21" id="jj5-DY-2sF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gi-wQ-ILL">
                                 <rect key="frame" x="75" y="332" width="264" height="34"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="MgD-zl-MgO"/>
                                     <constraint firstAttribute="width" constant="264" id="dx6-5J-cYe"/>
                                 </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ub-xH-7LI">
                                 <rect key="frame" x="75" y="417" width="264" height="34"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
@@ -83,7 +88,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YId-QL-Igr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-254.5" id="2oG-dY-HRE"/>
                             <constraint firstItem="2N0-iE-14J" firstAttribute="leading" secondItem="YId-QL-Igr" secondAttribute="leading" id="3TY-kz-whq"/>
@@ -247,7 +253,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="bBo-4l-KEh">
                             <connections>
-                                <segue destination="eyN-wa-zL9" kind="presentation" id="F0T-4R-9AS"/>
+                                <segue destination="bms-YW-eED" kind="presentation" id="F0T-4R-9AS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -268,19 +274,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oZw-gF-cxA">
-                                <rect key="frame" x="19.5" y="77" width="375" height="375"/>
+                                <rect key="frame" x="19.5" y="121" width="375" height="375"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="nsu-ru-TTH" appends="YES" id="S2o-Dx-5CI"/>
                                 </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Caption..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WhP-TN-F5Q">
-                                <rect key="frame" x="27" y="485" width="360" height="34"/>
+                                <rect key="frame" x="27" y="529" width="360" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt2-Rb-fic">
-                                <rect key="frame" x="182.5" y="567" width="49" height="30"/>
+                                <rect key="frame" x="182.5" y="611" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="eyN-wa-zL9" eventType="touchUpInside" id="Tze-NI-SXD"/>
@@ -299,6 +305,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="smA-sX-O8N"/>
                     </view>
+                    <navigationItem key="navigationItem" id="x49-sy-N0C">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Z7v-91-Ypq">
+                            <connections>
+                                <action selector="onCancelPostAction:" destination="eyN-wa-zL9" id="dfz-py-VR6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="commentField" destination="WhP-TN-F5Q" id="uUc-2D-ZXY"/>
                         <outlet property="imageView" destination="oZw-gF-cxA" id="CCr-QY-1aF"/>
@@ -311,7 +324,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2976.811594202899" y="118.52678571428571"/>
+            <point key="canvasLocation" x="3886.9565217391309" y="118.52678571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6F4-Og-PsI">
@@ -331,6 +344,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7c-1m-YJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1121.7391304347827" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KXi-bx-VNw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="bms-YW-eED" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SAW-zN-ckc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eyN-wa-zL9" kind="relationship" relationship="rootViewController" id="j9C-w3-USi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvm-oV-fuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2976.811594202899" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>

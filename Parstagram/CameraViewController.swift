@@ -21,6 +21,10 @@ class CameraViewController: UIViewController , UIImagePickerControllerDelegate, 
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
     
     
@@ -52,13 +56,13 @@ class CameraViewController: UIViewController , UIImagePickerControllerDelegate, 
         picker.delegate = self
         picker.allowsEditing = true
         
-        if UIImagePickerController.isSourceTypeAvailable(.camera){
-            picker.sourceType = .camera
-        }
-        else{
-            picker.sourceType = .photoLibrary
-        }
-        
+//        if UIImagePickerController.isSourceTypeAvailable(.camera){
+//            picker.sourceType = .camera
+//        }
+//        else{
+//            picker.sourceType = .photoLibrary
+//        }
+        picker.sourceType = .photoLibrary
         present(picker, animated: true, completion: nil)
     }
     
@@ -84,5 +88,8 @@ class CameraViewController: UIViewController , UIImagePickerControllerDelegate, 
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func onCancelPostAction(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
 }
